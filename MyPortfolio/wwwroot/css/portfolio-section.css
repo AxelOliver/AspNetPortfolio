@@ -1,0 +1,329 @@
+﻿main {
+    padding: 36px 60px 24px;
+    border-top-right-radius: 10px;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+main p {
+    font-size: 13px;
+    line-height: 1.538;
+    font-weight: 300;
+}
+
+main footer {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+main .portfolio-section {
+    margin-bottom: 33px;
+}
+
+main .portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    main .portfolio-wrapper .portfolio-item {
+        width: calc(50% - 7px);
+        height: 300px;
+        margin-bottom: 15px;
+        background-color: #d1d1d1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media (max-width: 1500px) {
+    main .portfolio-wrapper .portfolio-item {
+        width: calc(50% - 7px);
+    }
+}
+
+@media (max-width: 991px) {
+    main .portfolio-wrapper .portfolio-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    main .portfolio-wrapper .portfolio-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    main .portfolio-wrapper .portfolio-item {
+        width: 100%;
+    }
+}
+
+main .portfolio-wrapper .portfolio-item-img {
+    max-height: 198px;
+    max-width: 100%;
+}
+
+main .portfolio-wrapper .portfolio-item-details {
+    padding: 22px 26px;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #ffffff;
+}
+
+main .portfolio-wrapper .portfolio-item-title {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+main .portfolio-wrapper .portfolio-item-description {
+    font-size: 10px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+.hover-box {
+    position: relative;
+    perspective: 800px;
+    overflow: hidden;
+}
+
+    .hover-box .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: rotate3d(1, 0, 0, 90deg);
+        background-color: rgba(0, 0, 0, 0.42);
+        color: #ffffff;
+        pointer-events: none;
+    }
+
+    .hover-box.in-up .overlay {
+        transform-origin: 50% 0%;
+        -webkit-animation: in-up 300ms ease 0ms 1 forwards;
+        animation: in-up 300ms ease 0ms 1 forwards;
+    }
+
+    .hover-box.in-right .overlay {
+        transform-origin: 100% 0%;
+        -webkit-animation: in-right 300ms ease 0ms 1 forwards;
+        animation: in-right 300ms ease 0ms 1 forwards;
+    }
+
+    .hover-box.in-down .overlay {
+        transform-origin: 50% 100%;
+        -webkit-animation: in-down 300ms ease 0ms 1 forwards;
+        animation: in-down 300ms ease 0ms 1 forwards;
+    }
+
+    .hover-box.in-left .overlay {
+        transform-origin: 0% 0%;
+        -webkit-animation: in-left 300ms ease 0ms 1 forwards;
+        animation: in-left 300ms ease 0ms 1 forwards;
+    }
+
+    .hover-box.out-up .overlay {
+        transform-origin: 50% 0%;
+        -webkit-animation: out-up 300ms ease 0ms 1 forwards;
+        animation: out-up 300ms ease 0ms 1 forwards;
+    }
+
+    .hover-box.out-right .overlay {
+        transform-origin: 100% 50%;
+        -webkit-animation: out-right 300ms ease 0ms 1 forwards;
+        animation: out-right 300ms ease 0ms 1 forwards;
+    }
+
+    .hover-box.out-down .overlay {
+        transform-origin: 50% 100%;
+        -webkit-animation: out-down 300ms ease 0ms 1 forwards;
+        animation: out-down 300ms ease 0ms 1 forwards;
+    }
+
+    .hover-box.out-left .overlay {
+        transform-origin: 0% 0%;
+        -webkit-animation: out-left 300ms ease 0ms 1 forwards;
+        animation: out-left 300ms ease 0ms 1 forwards;
+    }
+
+@-webkit-keyframes in-up {
+    from {
+        transform: rotate3d(-1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-up {
+    from {
+        transform: rotate3d(-1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes in-right {
+    from {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-right {
+    from {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes in-down {
+    from {
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-down {
+    from {
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes in-left {
+    from {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-left {
+    from {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@-webkit-keyframes out-up {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(-1, 0, 0, 104deg);
+    }
+}
+
+@keyframes out-up {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(-1, 0, 0, 104deg);
+    }
+}
+
+@-webkit-keyframes out-right {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, -1, 0, 104deg) translateX(-1px);
+    }
+}
+
+@keyframes out-right {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, -1, 0, 104deg) translateX(-1px);
+    }
+}
+
+@-webkit-keyframes out-down {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(1, 0, 0, 104deg);
+    }
+}
+
+@keyframes out-down {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(1, 0, 0, 104deg);
+    }
+}
+
+@-webkit-keyframes out-left {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 104deg);
+    }
+}
+
+@keyframes out-left {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 104deg);
+    }
+}

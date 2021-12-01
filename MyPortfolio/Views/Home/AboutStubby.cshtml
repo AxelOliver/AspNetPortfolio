@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "AboutStubby";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 class="text-center">About Stubby</h2>
+
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-4 text-left">
+            <h3>What is Stubby App?</h3>
+            <p>
+                Stubby App is an app that allows users to shorten URL's and share them in their shortened version.<br />
+                The App is Built with ASP.Net MVC Framework, and uses complex SQL table structures including many to many and many to one table relationships.
+            </p>
+        </div>
+        <div class="col-12 col-md-4">
+            <h3>Technologies Used</h3>
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item language-item">SQL</li>
+                <li class="list-inline-item language-item">ASP.NET</li>
+                <li class="list-inline-item language-item">HTML</li>
+                <li class="list-inline-item language-item">SASS</li>
+                <li class="list-inline-item language-item">C#</li>
+                <li class="list-inline-item language-item">JAVASCRIPT</li>
+                <li class="list-inline-item language-item">BOOTSTRAP</li>
+                <li class="list-inline-item language-item">JQUERY</li>
+                <li class="list-inline-item language-item">MODERNIZR</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+            <a href="@Url.Action("Index", "Stubby")">
+                <button class="btn btn-primary">See Live</button>
+            </a>
+            <a href="https://www.github.com" target="_blank">
+                <button class="btn btn-primary">View Source Code</button>
+            </a>
+        </div>
+    </div>
+</div>
