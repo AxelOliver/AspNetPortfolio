@@ -1,0 +1,48 @@
+﻿@model MyPortfolio.Models.StubbyUserViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User.UserName)
+            </th>
+            <th>
+                Original Link)
+            </th>
+            <th>
+                Shortened Link
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stubby in Model.Stubbies)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.User.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => stubby.OriginalLink)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => stubby.ShortenedLink)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@stubby.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@stubby.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@stubby.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

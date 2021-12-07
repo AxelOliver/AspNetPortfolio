@@ -35,6 +35,9 @@ html {
   }
 }
 
+body {
+    background-color: #f0f0f0;
+}
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
@@ -71,7 +74,8 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 .language-item {
-    background-color: #c5e0c7;
+    color: #272B30;
+    background-color: #ABC8C0;
     border-radius: 7px;
     padding: 5px;
     margin: 2px;

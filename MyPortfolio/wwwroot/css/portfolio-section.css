@@ -49,7 +49,10 @@ main .portfolio-wrapper {
         width: calc(50% - 7px);
         height: 300px;
         margin-bottom: 15px;
-        background-color: #383e45;
+        background: #848484;
+        background: -moz-radial-gradient(center, #848484 0%, #BFBFBF 45%, #D4D4D4 100%);
+        background: -webkit-radial-gradient(center, #848484 0%, #BFBFBF 45%, #D4D4D4 100%);
+        background: radial-gradient(ellipse at center, #848484 0%, #BFBFBF 45%, #D4D4D4 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -102,6 +105,15 @@ main .portfolio-wrapper .portfolio-item-description {
     line-height: 1;
     margin-bottom: 0;
 }
+main .portfolio-wrapper .portfolio-item-button {
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .hover-box {
     position: relative;
     perspective: 800px;
@@ -117,7 +129,6 @@ main .portfolio-wrapper .portfolio-item-description {
         transform: rotate3d(1, 0, 0, 90deg);
         background-color: rgba(0, 0, 0, 0.42);
         color: #ffffff;
-        pointer-events: none;
     }
 
     .hover-box.in-up .overlay {

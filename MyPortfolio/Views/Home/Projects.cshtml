@@ -10,20 +10,103 @@
 <main>
     <section class="portfolio-section">
         <div class="portfolio-wrapper">
-            <a href="/Home/AboutStubby" class="portfolio-item hover-box rounded">
+            <figure href="/Home/AboutStubby" class="portfolio-item hover-box rounded">
                 <img src="~/images/img_2.png" alt="project" class="portfolio-item-img">
                 <figcaption class="portfolio-item-details overlay">
                     <h5 class="portfolio-item-title">STUBBIE APP</h5>
                     <p class="portfolio-item-description">URL Shortener Web Based Application</p>
+                    <!-- Button trigger modal -->
+                    <button class="portfolio-item-button btn btn-dark" type="button" data-toggle="modal" data-target="#stubbyModalCenter">
+                        View Details
+                    </button>
                 </figcaption>
-            </a>
-            <a href="/Home/AboutWayfinder" class="portfolio-item hover-box rounded">
+            </figure>
+            <!-- Modal -->
+            <div class="modal fade" id="stubbyModalCenter" tabindex="-1" role="dialog" aria-labelledby="stubbyModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Stubby App</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12">
+                                Stubby App is an app that allows users to shorten URL's and share them in their shortened version.<br />
+                                The App is Built with ASP.Net MVC Framework, and uses complex SQL table structures including many to many and many to one table relationships.
+                            </div>
+                            <div class="col-12">
+                                <h4 class="text-center">Technologies Used</h4>
+                                <ul class="list-unstyled list-inline text-center">
+                                    <li class="list-inline-item language-item shadow">MySQL</li>
+                                    <li class="list-inline-item language-item shadow">ASP.NET</li>
+                                    <li class="list-inline-item language-item shadow">HTML</li>
+                                    <li class="list-inline-item language-item shadow">SASS</li>
+                                    <li class="list-inline-item language-item shadow">C#</li>
+                                    <li class="list-inline-item language-item shadow">JAVASCRIPT</li>
+                                    <li class="list-inline-item language-item shadow">BOOTSTRAP</li>
+                                    <li class="list-inline-item language-item shadow">JQUERY</li>
+                                    <li class="list-inline-item language-item shadow">MODERNIZR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="@Url.Action("Index", "Stubbies")" class="btn btn-primary">View Live</a>
+                            <a href="http://www.github.com" class="btn btn-primary" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <figure class="portfolio-item hover-box rounded">
                 <img src="~/images/img_2.png" alt="project" class="portfolio-item-img">
                 <figcaption class="portfolio-item-details overlay">
                     <h5 class="portfolio-item-title">WayFinder App</h5>
                     <p class="portfolio-item-description">Multi Platform Application for Indoor Navigation</p>
+                    <!-- Button trigger modal -->
+                    <button class="portfolio-item-button btn btn-dark" type="button" data-toggle="modal" data-target="#wayfinderModal">
+                        View Details
+                    </button>
                 </figcaption>
-            </a>
+            </figure>
+            <!-- Modal -->
+            <div class="modal fade" id="wayfinderModal" tabindex="-1" role="dialog" aria-labelledby="wayfinderModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="WayfinderModalLongTitle">Wayfinder</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12">
+                                About Wayfinder indoor navigation
+                            </div>
+                            <div class="col-12">
+                                <h4 class="text-center">Technologies Used</h4>
+                                <ul class="list-unstyled list-inline text-center">
+                                    <li class="list-inline-item language-item shadow">SQL</li>
+                                    <li class="list-inline-item language-item shadow">ASP.NET</li>
+                                    <li class="list-inline-item language-item shadow">HTML</li>
+                                    <li class="list-inline-item language-item shadow">SASS</li>
+                                    <li class="list-inline-item language-item shadow">C#</li>
+                                    <li class="list-inline-item language-item shadow">JAVASCRIPT</li>
+                                    <li class="list-inline-item language-item shadow">BOOTSTRAP</li>
+                                    <li class="list-inline-item language-item shadow">JQUERY</li>
+                                    <li class="list-inline-item language-item shadow">MODERNIZR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="@Url.Action("Index", "Wayfinder")" class="btn btn-primary">View Live</a>
+                            <a href="http://www.github.com" class="btn btn-primary" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <a href="/Home/AboutStubby" class="portfolio-item hover-box rounded">
                 <img src="~/images/img_2.png" alt="project" class="portfolio-item-img">
                 <figcaption class="portfolio-item-details overlay">

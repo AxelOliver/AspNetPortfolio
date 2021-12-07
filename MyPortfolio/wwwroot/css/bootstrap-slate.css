@@ -12,57 +12,57 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #007bff;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #e83e8c;
-  --bs-red: #ee5f5b;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #f89406;
-  --bs-green: #62c462;
-  --bs-teal: #20c997;
-  --bs-cyan: #5bc0de;
-  --bs-white: #fff;
-  --bs-gray: #7a8288;
-  --bs-gray-dark: #3a3f44;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #999;
-  --bs-gray-600: #7a8288;
-  --bs-gray-700: #52575c;
-  --bs-gray-800: #3a3f44;
-  --bs-gray-900: #272b30;
-  --bs-primary: #3a3f44;
-  --bs-secondary: #7a8288;
-  --bs-success: #62c462;
-  --bs-info: #5bc0de;
-  --bs-warning: #f89406;
-  --bs-danger: #ee5f5b;
-  --bs-light: #e9ecef;
-  --bs-dark: #272b30;
-  --bs-primary-rgb: 58, 63, 68;
-  --bs-secondary-rgb: 122, 130, 136;
-  --bs-success-rgb: 98, 196, 98;
-  --bs-info-rgb: 91, 192, 222;
-  --bs-warning-rgb: 248, 148, 6;
-  --bs-danger-rgb: 238, 95, 91;
-  --bs-light-rgb: 233, 236, 239;
-  --bs-dark-rgb: 39, 43, 48;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 170, 170, 170;
-  --bs-body-bg-rgb: 39, 43, 48;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #aaa;
-  --bs-body-bg: #272b30;
+    --bs-blue: #007bff;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #e83e8c;
+    --bs-red: #ee5f5b;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #f89406;
+    --bs-green: #62c462;
+    --bs-teal: #20c997;
+    --bs-cyan: #5bc0de;
+    --bs-white: #fff;
+    --bs-gray: #7a8288;
+    --bs-gray-dark: #3a3f44;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #999;
+    --bs-gray-600: #7a8288;
+    --bs-gray-700: #52575c;
+    --bs-gray-800: #3a3f44;
+    --bs-gray-900: #272b30;
+    --bs-primary: #3a3f44;
+    --bs-secondary: #7a8288;
+    --bs-success: #62c462;
+    --bs-info: #5bc0de;
+    --bs-warning: #f89406;
+    --bs-danger: #ee5f5b;
+    --bs-light: #e9ecef;
+    --bs-dark: #272b30;
+    --bs-primary-rgb: 58, 63, 68;
+    --bs-secondary-rgb: 122, 130, 136;
+    --bs-success-rgb: 98, 196, 98;
+    --bs-info-rgb: 91, 192, 222;
+    --bs-warning-rgb: 248, 148, 6;
+    --bs-danger-rgb: 238, 95, 91;
+    --bs-light-rgb: 233, 236, 239;
+    --bs-dark-rgb: 39, 43, 48;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 170, 170, 170;
+    --bs-body-bg-rgb: 39, 43, 48;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #ededed;
+    --bs-body-bg: #272b30;
 }
 
 *,
@@ -2136,21 +2136,21 @@ progress {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #272b30;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ededed;
+    background-color: #4d4d4d;
+    background-clip: padding-box;
+    border: 1px solid #616161;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2168,11 +2168,11 @@ progress {
 }
 
 .form-control:focus {
-  color: #272b30;
-  background-color: #fff;
-  border-color: #9d9fa2;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(58, 63, 68, 0.25);
+    color: #ededed;
+    background-color: #616161;
+    border-color: #9d9fa2;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(58, 63, 68, 0.25);
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -3081,14 +3081,14 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #3a3f44;
-  border-color: #3a3f44;
+    color: #fff;
+    background-color: #3A7CA5;
+    border-color: #3a3f44;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #31363a;
+  background-color: #2a5a78;
   border-color: #2e3236;
 }
 
@@ -4351,6 +4351,7 @@ fieldset:disabled .btn {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+  margin-right: 5px
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4370,13 +4371,13 @@ fieldset:disabled .btn {
 }
 
 .navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
 }
 
 .navbar-nav-scroll {
@@ -11497,16 +11498,16 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-  background-image: linear-gradient(#52565a, #3a3f44 60%, #353a3f);
-  -webkit-filter: none;
-  filter: none;
+    background-image: linear-gradient(#3A7CA5, 60%, #193547);
+    -webkit-filter: none;
+    filter: none;
 }
 
-.btn-primary:not([disabled]):not(.disabled):hover, .btn-primary:not([disabled]):not(.disabled):focus, .btn-primary:not([disabled]):not(.disabled):active:hover, .btn-primary:not([disabled]):not(.disabled).active:hover {
-  background-image: linear-gradient(#25282c, #292c30 40%, #2b2f32);
-  -webkit-filter: none;
-  filter: none;
-}
+    .btn-primary:not([disabled]):not(.disabled):hover, .btn-primary:not([disabled]):not(.disabled):focus, .btn-primary:not([disabled]):not(.disabled):active:hover, .btn-primary:not([disabled]):not(.disabled).active:hover {
+        background-image: linear-gradient(#193547, 40%, #070f14);
+        -webkit-filter: none;
+        filter: none;
+    }
 
 .btn-secondary {
   background-image: linear-gradient(#8a9196, #7a8288 60%, #70787d);

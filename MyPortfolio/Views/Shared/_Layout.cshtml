@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Axel's Portfolio</title>
-    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
-    <link rel="stylesheet" href="~/css/bootstrap-slate.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @*<link rel="stylesheet" href="~/css/bootstrap-slate.css" />*@
     <link rel="stylesheet" href="~/css/site.css" />
     @await RenderSectionAsync("Stylesheets", required: false)
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MyPortfolio</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -28,10 +28,10 @@
                                 Projects
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-light" asp-area="" asp-controller="Home" asp-action="Projects">View All</a>
+                                <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="Projects">View All</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-light" asp-area="" asp-controller="Home" asp-action="AboutStubby">Stubby</a>
-                                <a class="dropdown-item text-light" asp-area="" asp-controller="Home" asp-action="AboutWayfinder">Wayfinder</a>
+                                <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="AboutStubby">Stubby</a>
+                                <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="AboutWayfinder">Wayfinder</a>
                             </div>
                         </li>
 
@@ -49,9 +49,9 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container">
+            <hr />
             &copy; 2021 - MyPortfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
