@@ -1,0 +1,44 @@
+﻿@model MyPortfolio.Models.Stubby
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Stubby</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ApplicationUserId" class="control-label"></label>
+                <input asp-for="ApplicationUserId" class="form-control" />
+                <span asp-validation-for="ApplicationUserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OriginalLink" class="control-label">Original Link</label>
+                <input asp-for="OriginalLink" class="form-control" />
+                <span asp-validation-for="OriginalLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortenedLink" class="control-label">Shortened Link</label>
+                <input asp-for="ShortenedLink" class="form-control" />
+                <span asp-validation-for="ShortenedLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
