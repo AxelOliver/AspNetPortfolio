@@ -22,11 +22,9 @@ namespace MyPortfolio.Models
         // GET: Stubbies
         public IActionResult Index()
         {
-            var userId = "2";
-            var user = _context.ApplicationUser.Where(u => u.Id == userId).FirstOrDefault();
-            var stubbies = _context.Stubby.Where(s => s.ApplicationUserId == userId).ToList();
-            StubbyUserViewModel data = new StubbyUserViewModel { User = user, Stubbies = stubbies };
-            return View(data);
+            var userId = "1";
+            var user = _context.ApplicationUser.Where(u => u.Id == userId).Include(s => s.Stubbies).FirstOrDefault();
+            return View(user);
         }
 
         // GET: Stubbies/Details/5
