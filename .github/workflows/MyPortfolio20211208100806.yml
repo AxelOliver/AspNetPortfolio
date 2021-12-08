@@ -2,11 +2,11 @@ name: Build and deploy .NET Core app to Windows WebApp MyPortfolio20211208100806
 on:
   push:
     branches:
-    - Stubby
+    - master
 env:
   AZURE_WEBAPP_NAME: MyPortfolio20211208100806
   AZURE_WEBAPP_PACKAGE_PATH: MyPortfolio/publish
-  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.MyPortfolio20211208100806_31dc }}
+  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.MyPortfolio20211208100806_86f2 }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
   WORKING_DIRECTORY: MyPortfolio
