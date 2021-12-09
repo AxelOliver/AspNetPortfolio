@@ -22,7 +22,7 @@ namespace MyPortfolio.Models
         // GET: Stubbies
         public IActionResult Index()
         {
-            var userId = "1";
+            var userId = "2";
             var user = _context.ApplicationUser.Where(u => u.Id == userId).Include(s => s.Stubbies).FirstOrDefault();
             return View(user);
         }
